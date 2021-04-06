@@ -49,3 +49,4 @@ speed-measure-plugin*.json
 /api/.venv/
 /api/**/*.pyc
 /api/.idea
+/api/celerybeat-schedule
