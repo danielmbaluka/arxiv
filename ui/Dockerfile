@@ -10,7 +10,7 @@ COPY package.json package-lock.json ./
 
 RUN npm install
 
-RUN ng update
+RUN npm install --only=dev
 
 RUN npm update
 
