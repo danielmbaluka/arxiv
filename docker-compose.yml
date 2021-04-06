@@ -1,0 +1,61 @@
+version: '3'
+services:
+  # rabbitmq container
+  rabbitmq:
+    image: rabbitmq:3-management
+    ports:
+      - 5672
+      - 15672
+  ui:
+    build:
+      context: ./ui
+    depends_on:
+      - api
+    links:
+      - api:api
+    volumes:
+    - ./ui/:/usr/src/app
+    command: bash -c 'ng serve --host 0.0.0.0 --port 4200'
+    ports:
+    - 4200:4200
+
+  api:
+    build:
+      context: ./api
+    depends_on:
+      - rabbitmq
+      - db
+      - worker
+    links:
+      - rabbitmq:rabbitmq
+      - db:db
+    volumes:
+      - ./api/:/usr/src/app
+    command: bash -c 'while !</dev/tcp/db/5432; do sleep 5; done; ./scripts/run_api.sh'
+    environment:
+      - BROKER_URL=amqp://guest:guest@rabbitmq:5672//
+    ports:
+    - 8001:8001
+
+  worker:
+    build:
+      context: ./api
+    volumes:
+      - ./api/:/usr/src/app
+      - ./api/scripts/supervisord.conf:/etc/supervisor/supervisord.conf
+    command: bash -c 'while !</dev/tcp/db/5432; do sleep 5; done; ./scripts/run_worker.sh'
+    environment:
+      - BROKER_URL=amqp://guest:guest@rabbitmq:5672//
+    depends_on:
+      - rabbitmq
+      - db
+    links:
+      - rabbitmq:rabbitmq
+      - db:db
+
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_DB=newsfeed
+      - POSTGRES_PASSWORD=aw8e7y287ehihiwdhed
+      - POSTGRES_USER=newsfeed

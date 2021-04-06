@@ -1,0 +1,16 @@
+<div>
+  <h4>Author Details | {{author['name']}}</h4>
+  <hr>
+  <div class="card">
+    <div class="card-body">
+      <p>Name: {{author['name']}}</p>
+      <p>Articles Written: {{author['articles_count']}}</p>
+      <hr>
+      <h5>Articles by this Author</h5>
+
+      <div *ngFor="let article of author['articles']">
+        <app-article-summary [article]="article"></app-article-summary>
+      </div>
+    </div>
+  </div>
+</div>

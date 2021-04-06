@@ -1,0 +1,20 @@
+<div>
+  <h1 mat-dialog-title>Sign In</h1>
+  <div mat-dialog-content>
+    <mat-form-field>
+      <mat-label>Username</mat-label>
+      <input matInput [(ngModel)]="user.username">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Password</mat-label>
+      <input type="password" matInput [(ngModel)]="user.password">
+    </mat-form-field>
+
+    <p>Don't have an account? <a [routerLink]="['/register']" (click)="onCancel()">Register</a></p>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-button (click)="onCancel()">Cancel</button>
+    <button mat-button (click)="onLogin()">Login</button>
+  </div>
+</div>

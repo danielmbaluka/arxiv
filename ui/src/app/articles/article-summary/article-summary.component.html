@@ -1,0 +1,31 @@
+<div class="card article-card">
+  <div class="card-body">
+    <div>
+      <h5>
+        <a [routerLink]="['/articles', article['id']]" *ngIf="showFullArticle">{{article['title']}}</a>
+        <span *ngIf="!showFullArticle">{{article['title']}}</span>
+      </h5>
+      <p><small>{{article['published'] | date}}</small></p>
+    </div>
+    <div>
+      <p *ngIf="showFullArticle">{{article['summary'] | dotdotdot:500}}<a [routerLink]="['/articles', article['id']]">read
+        more</a></p>
+      <p *ngIf="!showFullArticle">{{article['summary']}}</p>
+    </div>
+    <div>
+      <span>Authors: </span>
+      <span *ngFor="let author of article['authors']" class="author-links">
+          <a [routerLink]="['/authors', author['id']]" class="card-link"
+             style="text-decoration: underline">{{author['name']}}</a>
+        </span>
+    </div>
+
+    <p>
+      <button class="btn btn-sm" (click)="onFavourite(article['id'])">
+      <mat-icon>favorite</mat-icon>
+      </button>
+      <span>{{article['favorited_count']}}</span>
+    </p>
+
+  </div>
+</div>

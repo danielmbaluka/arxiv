@@ -1,0 +1,30 @@
+[
+  {
+    "model": "articles.topic",
+    "pk": 1,
+    "fields": {
+      "name": "psychiatry"
+    }
+  },
+  {
+    "model": "articles.topic",
+    "pk": 2,
+    "fields": {
+      "name": "therapy"
+    }
+  },
+  {
+    "model": "articles.topic",
+    "pk": 3,
+    "fields": {
+      "name": "data science"
+    }
+  },
+  {
+    "model": "articles.topic",
+    "pk": 4,
+    "fields": {
+      "name": "machine learning"
+    }
+  }
+]

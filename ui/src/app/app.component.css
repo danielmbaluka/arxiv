@@ -1,0 +1,21 @@
+.navbar .nav-item mat-icon {
+  font-size: 18px;
+}
+.navbar .nav-item span {
+  position: relative;
+  top: 3px;
+}
+.navbar .navbar-nav > a {
+  color: #efe5ff;
+  padding: 8px 15px;
+  font-size: 14px;
+}
+
+.navbar .navbar-nav > a:hover, .navbar .navbar-nav > a:focus {
+  color: #fff;
+  text-shadow: 0 0 4px rgba(255,255,255,0.3);
+}
+.navbar .navbar-nav > a > mat-icon {
+  display: block;
+  text-align: center;
+}

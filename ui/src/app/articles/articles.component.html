@@ -1,0 +1,35 @@
+<div>
+  <h4>Articles ({{totalItems}})</h4>
+  <hr>
+  <div>
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="form-group">
+          <div class="row">
+            <label for="category" class="col-form-label col-sm-3">Category</label>
+            <div class="col-sm-9">
+              <select class="form-control" id="category" [(ngModel)]="topic" (change)="fetchData()">
+                <option value="All">All</option>
+                <option *ngFor="let topic of topics" value="{{topic['id']}}">{{topic['name']}} ({{topic['articles_count']}})</option>
+              </select>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <mat-paginator [length]="totalItems"
+                       [pageSize]="pageSize"
+                       [pageSizeOptions]="pageSizeOptions"
+                       (page)="pageEvent = handlePagination($event)">
+        </mat-paginator>
+      </div>
+    </div>
+
+  </div>
+  <div *ngFor="let article of articles">
+
+    <app-article-summary [article]="article"></app-article-summary>
+
+  </div>
+</div>

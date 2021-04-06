@@ -1,0 +1,38 @@
+<div>
+  <h4>Authors ({{totalItems}})</h4>
+  <hr>
+  <div class="card">
+    <div class="card-body">
+
+      <div>
+        <mat-paginator [length]="totalItems"
+                       [pageSize]="pageSize"
+                       [pageSizeOptions]="pageSizeOptions"
+                       (page)="pageEvent = handlePagination($event)">
+        </mat-paginator>
+      </div>
+
+      <table class="table table-striped">
+        <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>No. of Articles</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr *ngFor="let author of authors">
+          <td><a [routerLink]="['/authors', author['id']]">{{author['id']}}</a></td>
+          <td><a [routerLink]="['/authors', author['id']]">{{author['name']}}</a></td>
+          <td>{{author['articles_count'] | number}}</td>
+        </tr>
+        </tbody>
+      </table>
+
+
+    </div>
+  </div>
+
+
+</div>

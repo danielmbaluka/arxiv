@@ -1,0 +1,24 @@
+<ng-progress></ng-progress>
+<nav class="navbar navbar-expand-lg navbar-dark bg-info">
+  <div class="collapse navbar-collapse" id="navbarText">
+    <div class="navbar-nav mr-auto">
+        <a class="nav-item nav-link" [routerLinkActive]="['active']" [routerLink]="['/articles']"><mat-icon>description</mat-icon> <span>Articles</span></a>
+        <a class="nav-link nav-item" [routerLinkActive]="['active']" [routerLink]="['/authors']"><mat-icon>people</mat-icon> <span>Authors</span></a>
+    </div>
+    <div class="navbar-nav ml-auto">
+      <a *ngIf="!authService.isLoggedIn()" href="#" (click)="onLogin($event)">Sign In</a>
+      <a *ngIf="authService.isLoggedIn()">{{authService.getUser()['username']}}</a>
+      <a *ngIf="authService.isLoggedIn()" (click)="onLogout()">Logout</a>
+    </div>
+  </div>
+</nav>
+<div class="main-content">
+  <div class="card">
+    <div class="card-body">
+
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+
+</div>
+

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <link href="http://arxiv.org/api/query?search_query%3Dall%3Atherapy%26id_list%3D%26start%3D0%26max_results%3D2" rel="self" type="application/atom+xml"/>
+    <title type="html">ArXiv Query: search_query=all:therapy&amp;id_list=&amp;start=0&amp;max_results=2</title>
+    <id>http://arxiv.org/api/bJZSXCgsqE/VWv1ff+DHG1nX/WA</id>
+    <updated>2021-04-04T00:00:00-04:00</updated>
+    <opensearch:totalResults xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">1693</opensearch:totalResults>
+    <opensearch:startIndex xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">0</opensearch:startIndex>
+    <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">2</opensearch:itemsPerPage>
+    <entry>
+        <id>http://arxiv.org/abs/2007.13115v1</id>
+        <updated>2020-07-26T12:22:16Z</updated>
+        <published>2020-07-26T12:22:16Z</published>
+        <title>Challenges in constructing genetic instruments for pharmacologic\n  therapies</title>
+        <summary>  The genes that encode the targets of most therapies do not have rare variants\nwith large-effect or common variants with moderate effects on the biomarker\nreflecting the pharmacologic action of the corresponding therapy. Therefore,\nproviding genetic target validation for most therapies is challenging. Novel\nmethods are being developed to combine multiple variants in the gene encoding\nthe target of a therapy that are weakly associated with the biomarker\nreflecting the pharmacologic action of that therapy into a genetic score that\ncan be used as an adequate instrumental variable. We describe one approach to\nsolve this important problem.\n</summary>
+        <author>
+            <name>B. A. Ference</name>
+        </author>
+        <author>
+            <name>G. Davey Smith</name>
+        </author>
+        <author>
+            <name>M. V. Holmes</name>
+        </author>
+        <author>
+            <name>A. L. Catapano</name>
+        </author>
+        <author>
+            <name>K. K. Ray</name>
+        </author>
+        <author>
+            <name>S. J. Nicholls</name>
+        </author>
+        <link href="http://arxiv.org/abs/2007.13115v1" rel="alternate" type="text/html"/>
+        <link title="pdf" href="http://arxiv.org/pdf/2007.13115v1" rel="related" type="application/pdf"/>
+        <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="q-bio.QM" scheme="http://arxiv.org/schemas/atom"/>
+        <category term="q-bio.QM" scheme="http://arxiv.org/schemas/atom"/>
+    </entry>
+    <entry>
+        <id>http://arxiv.org/abs/1811.06262v3</id>
+        <updated>2019-10-09T11:47:59Z</updated>
+        <published>2018-11-15T10:00:11Z</published>
+        <title>In Silico Implementation of Evolutionary Paradigm in Therapy Design:\n  Towards Anti-Cancer Therapy as Darwinian Process</title>
+        <summary>  In here presented in silico study we suggest a way how to implement the\nevolutionary principles into anti-cancer therapy design. We hypothesize that\ninstead of its ongoing supervised adaptation, the therapy may be constructed as\na self-sustaining evolutionary process in a dynamic fitness landscape\nestablished implicitly by evolving cancer cells, microenvironment and the\ntherapy itself. For these purposes, we replace a unified therapy with the\n`therapy species\', which is a population of heterogeneous elementary therapies,\nand propose a way how to turn the toxicity of the elementary therapy into its\nfitness in a way conforming to evolutionary causation. As a result, not only\nthe therapies govern the evolution of different cell phenotypes, but the cells\'\nresistances govern the evolution of the therapies as well. We illustrate the\napproach by the minimalistic ad hoc evolutionary model. Its results indicate\nthat the resistant cells could bias the evolution towards more toxic elementary\ntherapies by inhibiting the less toxic ones. As the evolutionary causation of\ncancer drug resistance has been intensively studied for a few decades, we refer\nto cancer as a special case to illustrate purely theoretical analysis.\n</summary>
+        <author>
+            <name>Branislav Brutovsky</name>
+        </author>
+        <author>
+            <name>Denis Horvath</name>
+        </author>
+        <arxiv:doi xmlns:arxiv="http://arxiv.org/schemas/atom">10.1016/j.jtbi.2019.110038</arxiv:doi>
+        <link title="doi" href="http://dx.doi.org/10.1016/j.jtbi.2019.110038" rel="related"/>
+        <arxiv:comment xmlns:arxiv="http://arxiv.org/schemas/atom">https://authors.elsevier.com/a/1Zss257im1nU8</arxiv:comment>
+        <arxiv:journal_ref xmlns:arxiv="http://arxiv.org/schemas/atom">Journal of Theoretical Biology 485(2020) 110038</arxiv:journal_ref>
+        <link href="http://arxiv.org/abs/1811.06262v3" rel="alternate" type="text/html"/>
+        <link title="pdf" href="http://arxiv.org/pdf/1811.06262v3" rel="related" type="application/pdf"/>
+        <arxiv:primary_category xmlns:arxiv="http://arxiv.org/schemas/atom" term="q-bio.PE" scheme="http://arxiv.org/schemas/atom"/>
+        <category term="q-bio.PE" scheme="http://arxiv.org/schemas/atom"/>
+    </entry>
+</feed>
