@@ -9,7 +9,15 @@ class ArticleSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Article
-        fields = ("id", "reference_id", "published", "title", "summary", "authors", "favorited_count")
+        fields = (
+            "id",
+            "reference_id",
+            "published",
+            "title",
+            "summary",
+            "authors",
+            "favorited_count",
+        )
 
 
 class TopicSerializer(serializers.ModelSerializer):

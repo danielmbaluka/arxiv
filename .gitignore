@@ -50,3 +50,5 @@ speed-measure-plugin*.json
 /api/**/*.pyc
 /api/.idea
 /api/celerybeat-schedule
+/api/supervisord.log
+/api/supervisord.pid
