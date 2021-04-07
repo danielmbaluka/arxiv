@@ -14,7 +14,8 @@ services:
     links:
       - api:api
     volumes:
-    - ./ui/:/usr/src/app
+    - './ui/:/usr/src/app'
+    - '/usr/src/app/node_modules'
     command: bash -c 'ng serve --host 0.0.0.0 --port 4200'
     ports:
     - 4200:4200

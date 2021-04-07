@@ -6,6 +6,8 @@ WORKDIR /usr/src/app
 
 COPY package.json package-lock.json ./
 
+COPY . ./
+
 RUN echo n | npm install
 
 RUN echo n | npm install -g @angular/cli
