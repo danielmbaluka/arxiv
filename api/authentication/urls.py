@@ -6,5 +6,5 @@ from authentication.views import RegistrationView
 urlpatterns = [
     url(r"^token/$", TokenObtainPairView.as_view(), name="token_login"),
     url(r"^token/refresh/$", TokenRefreshView.as_view()),
-    url(r"^signup/$", RegistrationView.as_view()),
+    url(r"^signup/$", RegistrationView.as_view(), name="registration"),
 ]

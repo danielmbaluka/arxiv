@@ -119,8 +119,10 @@ class TestFavoritingArticles(LiveServerTestCase):
             topic=Topic.objects.create(name="My Topic"),
         )
 
-        self.client.defaults['HTTP_AUTHORIZATION'] = 'Bearer ' + self.token
-        response = self.client.post(reverse("favourite_article"), {"article": article.pk})
+        self.client.defaults["HTTP_AUTHORIZATION"] = "Bearer " + self.token
+        response = self.client.post(
+            reverse("favourite_article"), {"article": article.pk}
+        )
 
         self.assertEqual(response.status_code, status.HTTP_200_OK)
 
