@@ -9,8 +9,8 @@
     <opensearch:itemsPerPage xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">2</opensearch:itemsPerPage>
     <entry>
         <id>http://arxiv.org/abs/2007.13115v1</id>
-        <updated>2020-07-26T12:22:16Z</updated>
-        <published>2020-07-26T12:22:16Z</published>
+        <updated>2021-03-26T12:22:16Z</updated>
+        <published>2021-03-26T12:22:16Z</published>
         <title>Challenges in constructing genetic instruments for pharmacologic\n  therapies</title>
         <summary>  The genes that encode the targets of most therapies do not have rare variants\nwith large-effect or common variants with moderate effects on the biomarker\nreflecting the pharmacologic action of the corresponding therapy. Therefore,\nproviding genetic target validation for most therapies is challenging. Novel\nmethods are being developed to combine multiple variants in the gene encoding\nthe target of a therapy that are weakly associated with the biomarker\nreflecting the pharmacologic action of that therapy into a genetic score that\ncan be used as an adequate instrumental variable. We describe one approach to\nsolve this important problem.\n</summary>
         <author>
@@ -38,8 +38,8 @@
     </entry>
     <entry>
         <id>http://arxiv.org/abs/1811.06262v3</id>
-        <updated>2019-10-09T11:47:59Z</updated>
-        <published>2018-11-15T10:00:11Z</published>
+        <updated>2021-03-09T11:47:59Z</updated>
+        <published>2021-03-15T10:00:11Z</published>
         <title>In Silico Implementation of Evolutionary Paradigm in Therapy Design:\n  Towards Anti-Cancer Therapy as Darwinian Process</title>
         <summary>  In here presented in silico study we suggest a way how to implement the\nevolutionary principles into anti-cancer therapy design. We hypothesize that\ninstead of its ongoing supervised adaptation, the therapy may be constructed as\na self-sustaining evolutionary process in a dynamic fitness landscape\nestablished implicitly by evolving cancer cells, microenvironment and the\ntherapy itself. For these purposes, we replace a unified therapy with the\n`therapy species\', which is a population of heterogeneous elementary therapies,\nand propose a way how to turn the toxicity of the elementary therapy into its\nfitness in a way conforming to evolutionary causation. As a result, not only\nthe therapies govern the evolution of different cell phenotypes, but the cells\'\nresistances govern the evolution of the therapies as well. We illustrate the\napproach by the minimalistic ad hoc evolutionary model. Its results indicate\nthat the resistant cells could bias the evolution towards more toxic elementary\ntherapies by inhibiting the less toxic ones. As the evolutionary causation of\ncancer drug resistance has been intensively studied for a few decades, we refer\nto cancer as a special case to illustrate purely theoretical analysis.\n</summary>
         <author>
