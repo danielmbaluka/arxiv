@@ -10,6 +10,6 @@ RUN echo n | npm install
 
 RUN echo n | npm install -g @angular/cli
 
-RUN npm update
+RUN echo n | npm update
 
 EXPOSE 4200
