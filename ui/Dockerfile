@@ -1,17 +1,15 @@
 FROM node:14
 
-RUN npm install -g @angular/cli
-
 RUN mkdir -p /usr/src/app
 
 WORKDIR /usr/src/app
 
 COPY package.json package-lock.json ./
 
-RUN npm install
+RUN echo n | npm install
 
-RUN npm install --only=dev
-
-RUN npm update
+RUN echo n | npm install -g @angular/cli
 
 EXPOSE 4200
+
+CMD ["ng", "serve"]
